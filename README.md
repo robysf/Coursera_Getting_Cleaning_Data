@@ -52,6 +52,8 @@ For **task 3**, I used the first of two brute-force, non-scalable methods in thi
 
 This is the most brute-force, non-scalable step I took. I first used the dplyr package's group-by() function to reorder the data by subject (first) and activity (second) *(line 69 in run_analysis.R)*. I then used the summarize() function of dplyr to take the mean of each variable by group *(lines 71-151 in run_analysis.R)*. Unfortunately, it seems that one cannot apply summarize() to a range of variables/columns - it has to be applied one at a time. It seems from my reading that the ddply package might have a way to apply a similar function to a range of columns, but I did not have the time to explore this so I ended up just rewriting the summarize() function for each of the ~78 variables that contained "mean" or "std" in their name, all in one executable line of code (though stretched across 80 lines of text!). My apologies. I look forward to learning from others' more elegant code on a better way to do this. 
 
+**NOTE that this section of code will install the dplyr package for you. If you already have this installed in R, you may wish to comment out *line 39 in run_analysis.R* in order to prevent it from trying to reinstall, or you will have to "cancel" when it tries to reinstall** 
+
 
 ## Write out the resulting data to a text file
 
