@@ -7,7 +7,7 @@
 # thanks for reading!
 
 # to be implemented in the working directory unzipped from the link in the class assignment, unmodified
-# with subdirectoriess called "test" and "train"
+# with subdirectories called "test" and "train"
 
 # read each dataset into R:
 subject_test <- read.table("test/subject_test.txt") 
