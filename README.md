@@ -56,3 +56,8 @@ This is the most brute-force, non-scalable step I took. I first used the dplyr p
 ## Write out the resulting data to a text file
 
 I used write.table() to save this final dataset to a file called "tidydata.txt" *(line 154 in run_analysis.R)*. 
+
+
+## Codebook
+
+The codebook with simple variable descriptions is included in a separate markdown file within this repository.
