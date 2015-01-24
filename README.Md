@@ -16,11 +16,11 @@ The first section of code *(lines 13-20 in run_analysis.R)* simply uses read.tab
 
 I then chose to rename variables next (this is part of **task 4**) to make column selection easier.
 
-### Subjects and activities
+#### Subjects and activities
 
 I named the single column in the subject and activity files either "subject" or "activity", respectively, to keep things clear later after combining datasets and data labels *(lines 23-26 in run_analysis.R)*.
 
-### Measurements
+#### Measurements
 
 I simply did this by reassigning the column names of the test and train datasets to the values specified in the features.txt file provided *(lines 27-29 in run_analysis.R)*. I did not attempt to rename these activities to a more readable form than the authors provided, as in my opinion this was a bit beyond the scope of what I can afford to put into this class. I did, however, reformat the names to make them non-redundant and "legal" as R variable names by removing "()" *(line 27 in run_analysis.R)*.
 
@@ -29,11 +29,11 @@ I simply did this by reassigning the column names of the test and train datasets
 
 For **task 1**, I first added a column name for subject and activity prior to combining data, so that the order of assignment would not be lost. I then combined datasets simply using rbind() in the base R package, adding one dataset immediately after the other.
 
-### Add subject and activity variables
+#### Add subject and activity variables
 
 First, I used cbind() to add subject and activity variables (activities still coded as numbers at this point) to the test and train datasets *(lines 32-33 in run_analysis.R)*
 
-### Combine test and train datasets
+#### Combine test and train datasets
 
 Once the data points were linked to their respective subject and activity, I then used rbind() to simply stick one dataset on the bottom of the other *(line 36 in run_analysis.R)*. All column orders should have been preserved, as the only data transformations were done identically to both datasets. As noted above, rather than chaining, I'm saving intermediate files at each step for clarity, with names that I hope are somewhat intuitive for each intermediate step. 
 
