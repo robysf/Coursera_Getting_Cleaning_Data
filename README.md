@@ -60,4 +60,4 @@ I used write.table() to save this final dataset to a file called "tidydata.txt" 
 
 ## Codebook
 
-The **codebook** with simple variable descriptions is included in a separate markdown file within this repository.
+The **codebook** with simple variable descriptions is included in a separate markdown file within this repository ("Codebook.md").
